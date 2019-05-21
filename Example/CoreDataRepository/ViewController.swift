@@ -7,18 +7,18 @@
 //
 
 import UIKit
+import CoreDataRepository
 
 class ViewController: UIViewController {
 
+    private let repository = CoreDataRepository<TestObject>()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        try? repository.save(item: TestStruct(title: "Test title"))
+        print(repository.fetchAll())
+        try? repository.deleteAll()
+        print(repository.fetchAll())
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 

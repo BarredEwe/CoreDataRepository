@@ -2,10 +2,4 @@ use_frameworks!
 
 target 'CoreDataRepository_Example' do
   pod 'CoreDataRepository', :path => '../'
-
-  target 'CoreDataRepository_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

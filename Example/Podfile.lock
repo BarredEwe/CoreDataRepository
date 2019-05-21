@@ -1,0 +1,23 @@
+PODS:
+  - BaseRepository (0.1.6)
+  - CoreDataRepository (0.1.0):
+    - BaseRepository
+
+DEPENDENCIES:
+  - CoreDataRepository (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BaseRepository
+
+EXTERNAL SOURCES:
+  CoreDataRepository:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BaseRepository: a1c7fc766fad81e379456a3bdd1cff524c614a5e
+  CoreDataRepository: 901188138b9ad11be38bd7245351d9f15d7452ae
+
+PODFILE CHECKSUM: ebd2b7475d7f26736e70b2e17c096a7a9e0b28ee
+
+COCOAPODS: 1.6.1

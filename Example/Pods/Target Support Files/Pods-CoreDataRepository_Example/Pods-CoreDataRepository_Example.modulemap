@@ -1,0 +1,6 @@
+framework module Pods_CoreDataRepository_Example {
+  umbrella header "Pods-CoreDataRepository_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

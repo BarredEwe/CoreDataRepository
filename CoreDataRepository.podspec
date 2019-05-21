@@ -22,21 +22,14 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/BarredEwe/CoreDataRepository'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'BarredEwe' => 'grishutin@bifit.com' }
   s.source           = { :git => 'https://github.com/BarredEwe/CoreDataRepository.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
+  s.swift_version = '4.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'CoreDataRepository/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'CoreDataRepository' => ['CoreDataRepository/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'BaseRepository'
+
 end

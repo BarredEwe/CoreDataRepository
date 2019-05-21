@@ -1,0 +1,6 @@
+framework module CoreDataRepository {
+  umbrella header "CoreDataRepository-umbrella.h"
+
+  export *
+  module * { export * }
+}
