@@ -78,8 +78,8 @@ class CoreDataClient {
     }()
 
     lazy var persistentContainer: NSPersistentContainer = {
-        let projectName = config.persistentContainerName
-        let container = NSPersistentContainer(name: projectName)
+        let projectName = CoreDataConfiguration.persistentContainerName
+        let container = NSPersistentContainer(name: projectName, managedObjectModel: managedObjectModel)
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
@@ -89,11 +89,8 @@ class CoreDataClient {
     }()
 
     lazy var managedObjectModel: NSManagedObjectModel = {
-        guard let modelURL = Bundle.main.url(forResource: config.persistentContainerName, withExtension: "momd"),
-            let managedObjectModel = NSManagedObjectModel(contentsOf: modelURL) else {
-                fatalError("Failed to created managed object model")
-        }
-
+        guard let url = CoreDataConfiguration.objectURL,
+            let managedObjectModel = NSManagedObjectModel(contentsOf: url) else { fatalError("Failed to created managed object model") }
         return managedObjectModel
     }()
 

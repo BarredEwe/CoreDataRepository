@@ -11,5 +11,6 @@ public var config = CoreDataConfiguration.shared
 
 @objcMembers public class CoreDataConfiguration: NSObject {
     public static let shared = CoreDataConfiguration()
-    public var persistentContainerName = Bundle.main.infoDictionary!["CFBundleName"] as! String
+    public static var persistentContainerName = Bundle.main.infoDictionary!["CFBundleName"] as! String
+    public static var objectURL = Bundle.main.url(forResource: CoreDataConfiguration.persistentContainerName, withExtension: "momd")
 }
