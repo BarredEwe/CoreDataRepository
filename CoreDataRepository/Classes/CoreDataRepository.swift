@@ -7,6 +7,8 @@ import Foundation
 import BaseRepository
 import CoreData
 
+fileprivate let processQueue = DispatchQueue(label: "CoreDataRepository.processQueue")
+
 public class CoreDataRepository<T: ModelEntity>: BaseRepository where T == T.EntityType.ModelEntityType, T: NSManagedObject {
 
     public typealias EntityType = T.EntityType
@@ -24,15 +26,19 @@ public class CoreDataRepository<T: ModelEntity>: BaseRepository where T == T.Ent
     public init() { }
 
     public func save(item: T.EntityType) throws {
-        let coreDataItem = item.modelObject
-        print("Save CoreData item: \(coreDataItem)")
-        coreDataClient.saveContext()
+        processQueue.sync {
+            let coreDataItem = item.modelObject
+            print("Save CoreData item: \(coreDataItem)")
+            coreDataClient.saveContext()
+        }
     }
 
     public func saveSeveral(items: [T.EntityType]) throws {
-        let coreDataItems = items.compactMap { $0.modelObject }
-        print("Save CoreData items: \(coreDataItems)")
-        coreDataClient.saveContext()
+        processQueue.sync {
+            let coreDataItems = items.compactMap { $0.modelObject }
+            print("Save CoreData items: \(coreDataItems)")
+            coreDataClient.saveContext()
+        }
     }
 
     public func update(block: @escaping () -> Void) throws {
@@ -40,30 +46,38 @@ public class CoreDataRepository<T: ModelEntity>: BaseRepository where T == T.Ent
     }
 
     public func delete(predicate: NSPredicate) throws {
-        let objects = coreDataClient.fetchObjects(entity: T.self, predicate: predicate, sortDescriptors: nil)
-        coreDataClient.delete(objects: objects as [NSManagedObject]);
-        coreDataClient.saveContext()
+        processQueue.sync {
+            let objects = coreDataClient.fetchObjects(entity: T.self, predicate: predicate, sortDescriptors: nil)
+            coreDataClient.delete(objects: objects as [NSManagedObject]);
+            coreDataClient.saveContext()
+        }
     }
 
     public func deleteAll() throws {
-        coreDataClient.deleteAllObjects()
+        processQueue.sync {
+            coreDataClient.deleteAllObjects()
+        }
     }
 
     public func fetch(predicate: NSPredicate?, sorted: Sorted?, page: (limit: Int, offset: Int)?) -> [T.EntityType] {
-        let sortDescriptor = sorted.flatMap { [NSSortDescriptor(key: $0.key, ascending: $0.ascending)] }
-        let objects = coreDataClient.fetchObjects(entity: T.self, predicate: predicate, sortDescriptors: sortDescriptor)
+        processQueue.sync {
+            let sortDescriptor = sorted.flatMap { [NSSortDescriptor(key: $0.key, ascending: $0.ascending)] }
+            let objects = coreDataClient.fetchObjects(entity: T.self, predicate: predicate, sortDescriptors: sortDescriptor)
 
-        guard let page = page, !objects.isEmpty, page.limit != 0 else { return objects.compactMap { $0.plainObject } }
+            guard let page = page, !objects.isEmpty, page.limit != 0 else { return objects.compactMap { $0.plainObject } }
 
-        let limit = objects.count > page.offset + page.limit ? page.offset + page.limit : objects.count
-        let offset = objects.count < page.offset ? objects.count : page.offset
+            let limit = objects.count > page.offset + page.limit ? page.offset + page.limit : objects.count
+            let offset = objects.count < page.offset ? objects.count : page.offset
 
-        return objects[offset..<limit].compactMap { $0.plainObject }
+            return objects[offset..<limit].compactMap { $0.plainObject }
+        }
     }
 
     public func fetchAll() -> [T.EntityType] {
-        return coreDataClient.fetchObjects(entity: T.self, predicate: nil, sortDescriptors: nil)
-            .compactMap { $0.plainObject }
+        processQueue.sync {
+            return coreDataClient.fetchObjects(entity: T.self, predicate: nil, sortDescriptors: nil)
+                .compactMap { $0.plainObject }
+        }
     }
 }
 
@@ -90,7 +104,7 @@ class CoreDataClient {
 
     lazy var managedObjectModel: NSManagedObjectModel = {
         guard let url = CoreDataConfiguration.objectURL,
-            let managedObjectModel = NSManagedObjectModel(contentsOf: url) else { fatalError("Failed to created managed object model") }
+              let managedObjectModel = NSManagedObjectModel(contentsOf: url) else { fatalError("Failed to created managed object model") }
         return managedObjectModel
     }()
 
@@ -115,7 +129,6 @@ class CoreDataClient {
 
     func deleteAllObjects() {
         for entityName in managedObjectModel.entitiesByName.keys {
-
             let request = NSFetchRequest<NSManagedObject>(entityName: entityName)
             request.includesPropertyValues = false
 
@@ -131,7 +144,6 @@ class CoreDataClient {
     }
 
     func fetchObject<T: NSManagedObject>(entity: T.Type, predicate: NSPredicate? = nil, sortDescriptors: [NSSortDescriptor]? = nil, context: NSManagedObjectContext) -> T? {
-
         let request = NSFetchRequest<T>(entityName: String(describing: entity))
 
         request.predicate = predicate
@@ -148,7 +160,6 @@ class CoreDataClient {
     }
 
     func fetchObjects<T: NSManagedObject>(entity: T.Type, predicate: NSPredicate? = nil, sortDescriptors: [NSSortDescriptor]? = nil) -> [T] {
-
         let request = NSFetchRequest<T>(entityName: String(describing: entity))
         request.predicate = predicate
         request.sortDescriptors = sortDescriptors
