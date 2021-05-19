@@ -28,11 +28,9 @@ public class CoreDataRepository<T: ModelEntity>: BaseRepository where T == T.Ent
     public func save(item: T.EntityType) throws {
         let context = CoreDataClient.shared.currentContext
         processQueue.sync {
-            context.perform {
-                let coreDataItem = item.modelObject
-                print("Save CoreData item: \(coreDataItem)")
-                self.coreDataClient.saveContext(context: context)
-            }
+            let coreDataItem = item.modelObject
+            print("Save CoreData item: \(coreDataItem)")
+            self.coreDataClient.saveContext(context: context)
         }
     }
 
@@ -52,11 +50,9 @@ public class CoreDataRepository<T: ModelEntity>: BaseRepository where T == T.Ent
     public func delete(predicate: NSPredicate) throws {
         let context = CoreDataClient.shared.currentContext
         processQueue.sync {
-            coreDataClient.context.perform {
-                let objects = self.coreDataClient.fetchObjects(entity: T.self, predicate: predicate, sortDescriptors: nil, context: context)
-                self.coreDataClient.delete(objects: objects as [NSManagedObject], context: context)
-                self.coreDataClient.saveContext(context: context)
-            }
+            let objects = self.coreDataClient.fetchObjects(entity: T.self, predicate: predicate, sortDescriptors: nil, context: context)
+            self.coreDataClient.delete(objects: objects as [NSManagedObject], context: context)
+            self.coreDataClient.saveContext(context: context)
         }
     }
 

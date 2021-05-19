@@ -61,10 +61,8 @@ class CoreDataClient {
     }
 
     func delete(objects: [NSManagedObject], context: NSManagedObjectContext) {
-        context.perform {
-            for object in objects {
-                context.delete(object)
-            }
+        for object in objects {
+            context.delete(object)
         }
     }
 
@@ -73,15 +71,13 @@ class CoreDataClient {
             let request = NSFetchRequest<NSManagedObjectID>(entityName: entityName)
             request.resultType = .managedObjectIDResultType
 
-            context.perform {
-                do {
-                    let result = try context.fetch(request)
-                    result.forEach { context.delete(context.object(with: $0)) }
-                    self.saveContext(context: context)
-                }
-                catch let error as NSError {
-                    print(error.localizedDescription)
-                }
+            do {
+                let result = try context.fetch(request)
+                result.forEach { context.delete(context.object(with: $0)) }
+                self.saveContext(context: context)
+            }
+            catch let error as NSError {
+                print(error.localizedDescription)
             }
         }
     }
