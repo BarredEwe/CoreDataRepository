@@ -1,6 +1,6 @@
 {
   "name": "CoreDataRepository",
-  "version": "0.2.0",
+  "version": "0.5.0",
   "summary": "A short description of CoreDataRepository.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/BarredEwe/CoreDataRepository",
@@ -13,11 +13,11 @@
   },
   "source": {
     "git": "https://github.com/BarredEwe/CoreDataRepository.git",
-    "tag": "0.2.0"
+    "tag": "0.5.0"
   },
   "swift_versions": "5.0",
   "platforms": {
-    "ios": "10.0"
+    "ios": "12.0"
   },
   "source_files": "CoreDataRepository/Classes/**/*",
   "dependencies": {

@@ -1,6 +1,6 @@
 PODS:
   - BaseRepository (0.2.0)
-  - CoreDataRepository (0.2.0):
+  - CoreDataRepository (0.5.0):
     - BaseRepository
 
 DEPENDENCIES:
@@ -16,8 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BaseRepository: 776b07f26a8a50399cf669147a1e39739e19e098
-  CoreDataRepository: 1c8b80409d65042b11d0e7282ea06df2990d7be9
+  CoreDataRepository: b8b64db6d93b7a2612df98a7552422b250b9bf35
 
 PODFILE CHECKSUM: ebd2b7475d7f26736e70b2e17c096a7a9e0b28ee
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

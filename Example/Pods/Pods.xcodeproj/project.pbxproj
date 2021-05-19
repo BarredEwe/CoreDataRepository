@@ -7,37 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		045DE8A09C726EBD294083F80157DF96 /* CoreDataRepository-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88F44AA43D2416842C6E1EA67123ADAD /* CoreDataRepository-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E574E65AA151A9385E4ED72C87781CF /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F2A5AA3434DA729F2CC2C039207AD /* BaseRepository.swift */; };
-		1BDC3621578067AFE7CDA253B3C44B12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA7A7A4E16FBB7FB5FD9D2E8EA7810A /* Foundation.framework */; };
-		220C9EA2FB7A23C742166EA950D8A51A /* CoreDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB92779690CDDC72E4BA6E3EBA6438AF /* CoreDataRepository.swift */; };
-		2B03CCFF49562C8A3DF39C595B4ABF61 /* BaseRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 765B15B15831F3253157054CDE7493E2 /* BaseRepository.framework */; };
+		223E1F1DB84F42EFDA799337FC59C9A8 /* BaseRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 765B15B15831F3253157054CDE7493E2 /* BaseRepository.framework */; };
 		35D3D0CEC8E5FA2D84AA0471803B7CE9 /* BaseRepository-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74A689782D47A588D867062743881EDE /* BaseRepository-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3ECA6044B600D8AA2B07E093911DFFF8 /* CoreDataConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B5F521A16FC9A439E65D91B4BDA2B4 /* CoreDataConfiguration.swift */; };
+		4A14E260785B914AF3C274672A5F797B /* CoreDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5C08C7E937394FB96806AC8C96F694 /* CoreDataRepository.swift */; };
+		588DB7C4416DCEB42DA3B39BA205F249 /* CoreDataRepository-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81DE710E8685809ACEAD62FC94CD32F8 /* CoreDataRepository-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5ECC30F73E680F7F450BF522FAC993ED /* Pods-CoreDataRepository_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2635F3ABCB389F0D466E4E821ED20EE /* Pods-CoreDataRepository_Example-dummy.m */; };
-		81867125D9440C2B5DD04AF160C5AD64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA7A7A4E16FBB7FB5FD9D2E8EA7810A /* Foundation.framework */; };
+		6BC9075C87B466B5EF4E7CC7F73BD988 /* CoreDataRepository-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C7A36E5488933977576E134997A336 /* CoreDataRepository-dummy.m */; };
+		72B15B3DBAA109DFAB0A2948FD62D788 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E20E509B1EF07C8104B57A0CBC9887 /* Foundation.framework */; };
+		ACD6196C26D84838DD8A36D2917812F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E20E509B1EF07C8104B57A0CBC9887 /* Foundation.framework */; };
 		B0EC1175299D3D6A61958BCEF0DFFC2A /* Pods-CoreDataRepository_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22F3DA65361D3AAD944DAC41F0CF0A00 /* Pods-CoreDataRepository_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B835A4A74E8A3E8838FE698D9202A27E /* CoreDataConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB583876416607BD95BD44253E4E82F7 /* CoreDataConfiguration.swift */; };
 		C0439A305338A66A239E5C3382E5C16A /* BaseRepository-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4450481EE864F1C72423873E3671A702 /* BaseRepository-dummy.m */; };
-		D94695D05641D68E1CFBED0A96185541 /* CoreDataRepository-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E89FA7A784963C5A1FE751979F6DA9 /* CoreDataRepository-dummy.m */; };
-		DEEA7DB7AABEEF07C4A45D70FAEFEDA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA7A7A4E16FBB7FB5FD9D2E8EA7810A /* Foundation.framework */; };
+		CA304FEF3F66CF616CD8FB00645F08EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E20E509B1EF07C8104B57A0CBC9887 /* Foundation.framework */; };
+		EAA46DB69C7EA9BA9D6DCBFCA1BEE3FE /* CoreDataClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600ADD514D9CCAD7572935FDCBFBEEC6 /* CoreDataClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		25E8CA12A89F57B75A20E4648FEA8F42 /* PBXContainerItemProxy */ = {
+		33BD9D3DCFA6D29414B68D0EAEEDC101 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 05BAF2569CFAC82EE098456055A15BB6;
 			remoteInfo = BaseRepository;
 		};
-		5D51F0C4B670D92B297B8D50E50F7FB9 /* PBXContainerItemProxy */ = {
+		9535E5F059FBA87ECFC7E3DA3FB3A0DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 05BAF2569CFAC82EE098456055A15BB6;
 			remoteInfo = BaseRepository;
 		};
-		74A855B61E0ADB0E9FCF2C65E9348ACD /* PBXContainerItemProxy */ = {
+		9AEB76BD2A589390A24A9F76AED3822D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -49,48 +50,49 @@
 /* Begin PBXFileReference section */
 		090750948B620BEE6FBEC2D36BC7BBD6 /* BaseRepository.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BaseRepository.modulemap; sourceTree = "<group>"; };
 		09DFCE701A6CA258C9E096D0ED4929E9 /* Pods-CoreDataRepository_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CoreDataRepository_Example.modulemap"; sourceTree = "<group>"; };
-		11A99D6904B638282E62C70DD4592A02 /* CoreDataRepository.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CoreDataRepository.release.xcconfig; sourceTree = "<group>"; };
+		15C7A36E5488933977576E134997A336 /* CoreDataRepository-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CoreDataRepository-dummy.m"; sourceTree = "<group>"; };
 		22F3DA65361D3AAD944DAC41F0CF0A00 /* Pods-CoreDataRepository_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoreDataRepository_Example-umbrella.h"; sourceTree = "<group>"; };
 		340F3EEA5B114C4A4C55C3AD2297B4DE /* BaseRepository.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BaseRepository.debug.xcconfig; sourceTree = "<group>"; };
 		3830117CBBEBBDD75F2B095289C3A011 /* Pods-CoreDataRepository_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreDataRepository_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		40301F4420B9C36412368C1B3B19EDBB /* CoreDataRepository.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CoreDataRepository.debug.xcconfig; sourceTree = "<group>"; };
-		40B18C7A7189F5FDDFBF7199AB10896F /* CoreDataRepository-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CoreDataRepository-Info.plist"; sourceTree = "<group>"; };
+		412AE5F25023689EF9F4EFAE539FA969 /* CoreDataRepository-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoreDataRepository-prefix.pch"; sourceTree = "<group>"; };
 		419CC55A1D5EC8DC36F98145348A6003 /* BaseRepository-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BaseRepository-prefix.pch"; sourceTree = "<group>"; };
+		42761889A7065170EBFD14246EA1D5A4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		4450481EE864F1C72423873E3671A702 /* BaseRepository-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BaseRepository-dummy.m"; sourceTree = "<group>"; };
 		5654C75DBB2154CCC298FFBE6242C2BD /* Pods-CoreDataRepository_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoreDataRepository_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		58951744044A297211D8FC55A039247A /* CoreDataRepository.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CoreDataRepository.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6898F3E2111BCE4B84BF0AEB93C6A0F2 /* BaseRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BA7A7A4E16FBB7FB5FD9D2E8EA7810A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		57FC512C251570C0C0101B272C61928C /* CoreDataRepository-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CoreDataRepository-Info.plist"; sourceTree = "<group>"; };
+		600ADD514D9CCAD7572935FDCBFBEEC6 /* CoreDataClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataClient.swift; path = CoreDataRepository/Classes/CoreDataClient.swift; sourceTree = "<group>"; };
+		6898F3E2111BCE4B84BF0AEB93C6A0F2 /* BaseRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BaseRepository.framework; path = BaseRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F7603B71F184500CB313CD1A5C7B4AF /* Pods-CoreDataRepository_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoreDataRepository_Example-Info.plist"; sourceTree = "<group>"; };
 		74A689782D47A588D867062743881EDE /* BaseRepository-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BaseRepository-umbrella.h"; sourceTree = "<group>"; };
 		765B15B15831F3253157054CDE7493E2 /* BaseRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		77710B54BEBB68FDCA7942B10C48AF00 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		88F44AA43D2416842C6E1EA67123ADAD /* CoreDataRepository-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoreDataRepository-umbrella.h"; sourceTree = "<group>"; };
+		81DE710E8685809ACEAD62FC94CD32F8 /* CoreDataRepository-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoreDataRepository-umbrella.h"; sourceTree = "<group>"; };
+		86E20E509B1EF07C8104B57A0CBC9887 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		86E2FD0BCD885A8C96AF11B129C4181B /* CoreDataRepository.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CoreDataRepository.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8A5C08C7E937394FB96806AC8C96F694 /* CoreDataRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataRepository.swift; path = CoreDataRepository/Classes/CoreDataRepository.swift; sourceTree = "<group>"; };
 		8B8A3E40E882C86864A3964E57EB1731 /* BaseRepository-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BaseRepository-Info.plist"; sourceTree = "<group>"; };
-		96E3C176CD8A49078E20A45007D094CA /* Pods_CoreDataRepository_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataRepository_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2E89FA7A784963C5A1FE751979F6DA9 /* CoreDataRepository-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CoreDataRepository-dummy.m"; sourceTree = "<group>"; };
-		A395CBC19537BF57F0199D9F50B8C8F4 /* CoreDataRepository-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoreDataRepository-prefix.pch"; sourceTree = "<group>"; };
-		B1137644F16FABB6D1BF479F89EEBC4C /* CoreDataRepository.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CoreDataRepository.modulemap; sourceTree = "<group>"; };
-		BB92779690CDDC72E4BA6E3EBA6438AF /* CoreDataRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataRepository.swift; path = CoreDataRepository/Classes/CoreDataRepository.swift; sourceTree = "<group>"; };
-		C1B5F521A16FC9A439E65D91B4BDA2B4 /* CoreDataConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataConfiguration.swift; path = CoreDataRepository/Classes/CoreDataConfiguration.swift; sourceTree = "<group>"; };
-		C4FC7BCAA91D080F1A246EA2B09308D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		96E3C176CD8A49078E20A45007D094CA /* Pods_CoreDataRepository_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CoreDataRepository_Example.framework; path = "Pods-CoreDataRepository_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B7DB848F86E20A22528044CD6A7209D8 /* CoreDataRepository.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CoreDataRepository.modulemap; sourceTree = "<group>"; };
+		BB583876416607BD95BD44253E4E82F7 /* CoreDataConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataConfiguration.swift; path = CoreDataRepository/Classes/CoreDataConfiguration.swift; sourceTree = "<group>"; };
 		CAB764AC8A3051C2F3B04FD6282E2F40 /* Pods-CoreDataRepository_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoreDataRepository_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CC660890701486A2BDBF1ABD52CFDB25 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		D1229429BF9D6EC45B7B04377E250D62 /* Pods-CoreDataRepository_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreDataRepository_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D2635F3ABCB389F0D466E4E821ED20EE /* Pods-CoreDataRepository_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoreDataRepository_Example-dummy.m"; sourceTree = "<group>"; };
 		D54E7FEF2EEBB225651F9DDA247CD2E8 /* BaseRepository.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BaseRepository.release.xcconfig; sourceTree = "<group>"; };
-		D6E1792238EE1BBB310A1FEC4011AFD4 /* CoreDataRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreDataRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6A9F2B5FFD977A298745E3AC135287D /* CoreDataRepository.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CoreDataRepository.debug.xcconfig; sourceTree = "<group>"; };
+		D6E1792238EE1BBB310A1FEC4011AFD4 /* CoreDataRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CoreDataRepository.framework; path = CoreDataRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6FB223A2603446F0B38270E94575D8F /* CoreDataRepository.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CoreDataRepository.release.xcconfig; sourceTree = "<group>"; };
 		E45F2A5AA3434DA729F2CC2C039207AD /* BaseRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseRepository.swift; path = BaseRepository/Classes/BaseRepository.swift; sourceTree = "<group>"; };
 		FFF3EAA594FDA3E3EDBE9A0270B98119 /* Pods-CoreDataRepository_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoreDataRepository_Example-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6AE7C5E60D9F1B513E53EF6259352D41 /* Frameworks */ = {
+		09113A2EB369481E62A8B88B2631F17A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B03CCFF49562C8A3DF39C595B4ABF61 /* BaseRepository.framework in Frameworks */,
-				1BDC3621578067AFE7CDA253B3C44B12 /* Foundation.framework in Frameworks */,
+				223E1F1DB84F42EFDA799337FC59C9A8 /* BaseRepository.framework in Frameworks */,
+				ACD6196C26D84838DD8A36D2917812F9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81867125D9440C2B5DD04AF160C5AD64 /* Foundation.framework in Frameworks */,
+				CA304FEF3F66CF616CD8FB00645F08EE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,19 +108,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEEA7DB7AABEEF07C4A45D70FAEFEDA7 /* Foundation.framework in Frameworks */,
+				72B15B3DBAA109DFAB0A2948FD62D788 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00BF87D2A8FC97BF95D2A60CD94CB1F7 /* Development Pods */ = {
+		070A92C0FCCC51DCB4B17239E0769F36 /* CoreDataRepository */ = {
 			isa = PBXGroup;
 			children = (
-				7F44D6624B36A86D5BB96CFC16AF66A3 /* CoreDataRepository */,
+				600ADD514D9CCAD7572935FDCBFBEEC6 /* CoreDataClient.swift */,
+				BB583876416607BD95BD44253E4E82F7 /* CoreDataConfiguration.swift */,
+				8A5C08C7E937394FB96806AC8C96F694 /* CoreDataRepository.swift */,
+				7D478C290DDF80DA9004045F63913CCC /* Pod */,
+				A57AE7D1F0E99AA3D14C670EE22E1604 /* Support Files */,
 			);
-			name = "Development Pods";
+			name = CoreDataRepository;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		0843670CE94F7DD687DF5931B1D6D8CC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				86E20E509B1EF07C8104B57A0CBC9887 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		3502CE0C5696197DD1DE15DE095B43D5 /* Products */ = {
@@ -129,21 +144,6 @@
 				96E3C176CD8A49078E20A45007D094CA /* Pods_CoreDataRepository_Example.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		4633368C81C214FA070D319125705498 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B1137644F16FABB6D1BF479F89EEBC4C /* CoreDataRepository.modulemap */,
-				A2E89FA7A784963C5A1FE751979F6DA9 /* CoreDataRepository-dummy.m */,
-				40B18C7A7189F5FDDFBF7199AB10896F /* CoreDataRepository-Info.plist */,
-				A395CBC19537BF57F0199D9F50B8C8F4 /* CoreDataRepository-prefix.pch */,
-				88F44AA43D2416842C6E1EA67123ADAD /* CoreDataRepository-umbrella.h */,
-				40301F4420B9C36412368C1B3B19EDBB /* CoreDataRepository.debug.xcconfig */,
-				11A99D6904B638282E62C70DD4592A02 /* CoreDataRepository.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/CoreDataRepository";
 			sourceTree = "<group>";
 		};
 		5306229999FC3BBC9392373555C0674C /* Targets Support Files */ = {
@@ -179,26 +179,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		7F44D6624B36A86D5BB96CFC16AF66A3 /* CoreDataRepository */ = {
+		7D478C290DDF80DA9004045F63913CCC /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				C1B5F521A16FC9A439E65D91B4BDA2B4 /* CoreDataConfiguration.swift */,
-				BB92779690CDDC72E4BA6E3EBA6438AF /* CoreDataRepository.swift */,
-				A81E39539A50391CB4F061AA44EF2644 /* Pod */,
-				4633368C81C214FA070D319125705498 /* Support Files */,
-			);
-			name = CoreDataRepository;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		A81E39539A50391CB4F061AA44EF2644 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				58951744044A297211D8FC55A039247A /* CoreDataRepository.podspec */,
-				C4FC7BCAA91D080F1A246EA2B09308D3 /* LICENSE */,
-				77710B54BEBB68FDCA7942B10C48AF00 /* README.md */,
+				86E2FD0BCD885A8C96AF11B129C4181B /* CoreDataRepository.podspec */,
+				CC660890701486A2BDBF1ABD52CFDB25 /* LICENSE */,
+				42761889A7065170EBFD14246EA1D5A4 /* README.md */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		A57AE7D1F0E99AA3D14C670EE22E1604 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7DB848F86E20A22528044CD6A7209D8 /* CoreDataRepository.modulemap */,
+				15C7A36E5488933977576E134997A336 /* CoreDataRepository-dummy.m */,
+				57FC512C251570C0C0101B272C61928C /* CoreDataRepository-Info.plist */,
+				412AE5F25023689EF9F4EFAE539FA969 /* CoreDataRepository-prefix.pch */,
+				81DE710E8685809ACEAD62FC94CD32F8 /* CoreDataRepository-umbrella.h */,
+				D6A9F2B5FFD977A298745E3AC135287D /* CoreDataRepository.debug.xcconfig */,
+				D6FB223A2603446F0B38270E94575D8F /* CoreDataRepository.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CoreDataRepository";
 			sourceTree = "<group>";
 		};
 		AD8DE605F8123B49351CEB8365BAA81A /* Support Files */ = {
@@ -220,7 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				765B15B15831F3253157054CDE7493E2 /* BaseRepository.framework */,
-				CCB5A2CC5A00523E01C028E4D9E3B99A /* iOS */,
+				0843670CE94F7DD687DF5931B1D6D8CC /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,22 +234,15 @@
 				E45F2A5AA3434DA729F2CC2C039207AD /* BaseRepository.swift */,
 				AD8DE605F8123B49351CEB8365BAA81A /* Support Files */,
 			);
+			name = BaseRepository;
 			path = BaseRepository;
-			sourceTree = "<group>";
-		};
-		CCB5A2CC5A00523E01C028E4D9E3B99A /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6BA7A7A4E16FBB7FB5FD9D2E8EA7810A /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				00BF87D2A8FC97BF95D2A60CD94CB1F7 /* Development Pods */,
+				FF6D4A0453F32BA65C99AC9E79888A48 /* Development Pods */,
 				ADEDB4E2BE7C411C24ACCED4365D8186 /* Frameworks */,
 				7D40F9DFF3DA74A6F2C8C478762C8CA2 /* Pods */,
 				3502CE0C5696197DD1DE15DE095B43D5 /* Products */,
@@ -254,22 +250,30 @@
 			);
 			sourceTree = "<group>";
 		};
+		FF6D4A0453F32BA65C99AC9E79888A48 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				070A92C0FCCC51DCB4B17239E0769F36 /* CoreDataRepository */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		E85219782A7C59CF745918D676954548 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				588DB7C4416DCEB42DA3B39BA205F249 /* CoreDataRepository-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9C5FB5DBB96298EE53F366E25273DEE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B0EC1175299D3D6A61958BCEF0DFFC2A /* Pods-CoreDataRepository_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E9CF612140B57CD655DE6DC1F577768A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				045DE8A09C726EBD294083F80157DF96 /* CoreDataRepository-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,8 +318,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				38C5B5B3BAAE3A72CD8161E351E90E71 /* PBXTargetDependency */,
-				F74B22134816CA28FF4AAF8A937796A8 /* PBXTargetDependency */,
+				E7E5E2C7F47DF19BDF1B4C7A6958A9D1 /* PBXTargetDependency */,
+				A6D0E83AECAF9BCC41300FB1AFD243B7 /* PBXTargetDependency */,
 			);
 			name = "Pods-CoreDataRepository_Example";
 			productName = "Pods-CoreDataRepository_Example";
@@ -324,17 +328,17 @@
 		};
 		8668E09CA5CA1536ED774045521A1205 /* CoreDataRepository */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DFDE9635FD9DAEDE2CCF80F078F8664A /* Build configuration list for PBXNativeTarget "CoreDataRepository" */;
+			buildConfigurationList = 75B8AC7AF7D7EB724C97510771DFF3EF /* Build configuration list for PBXNativeTarget "CoreDataRepository" */;
 			buildPhases = (
-				E9CF612140B57CD655DE6DC1F577768A /* Headers */,
-				AD42D343DB21DB4A34E74403BACDA326 /* Sources */,
-				6AE7C5E60D9F1B513E53EF6259352D41 /* Frameworks */,
-				B1E04A12E989B7F729C912B0DA8C9B67 /* Resources */,
+				E85219782A7C59CF745918D676954548 /* Headers */,
+				2981347E23F3AB8A0EB5EF0CECFA0F85 /* Sources */,
+				09113A2EB369481E62A8B88B2631F17A /* Frameworks */,
+				255386AF225FF8B73F1EFCD8C25B5BFC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1119843E813051FADDB181E76AF69E81 /* PBXTargetDependency */,
+				92FB67AC3EC198E1E07A5AC89EE43F9C /* PBXTargetDependency */,
 			);
 			name = CoreDataRepository;
 			productName = CoreDataRepository;
@@ -348,7 +352,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -371,7 +375,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B1E04A12E989B7F729C912B0DA8C9B67 /* Resources */ = {
+		255386AF225FF8B73F1EFCD8C25B5BFC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,6 +399,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2981347E23F3AB8A0EB5EF0CECFA0F85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA46DB69C7EA9BA9D6DCBFCA1BEE3FE /* CoreDataClient.swift in Sources */,
+				B835A4A74E8A3E8838FE698D9202A27E /* CoreDataConfiguration.swift in Sources */,
+				6BC9075C87B466B5EF4E7CC7F73BD988 /* CoreDataRepository-dummy.m in Sources */,
+				4A14E260785B914AF3C274672A5F797B /* CoreDataRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		82578AFF9F2EA32D44F332FDB0E9DF44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,47 +427,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD42D343DB21DB4A34E74403BACDA326 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3ECA6044B600D8AA2B07E093911DFFF8 /* CoreDataConfiguration.swift in Sources */,
-				D94695D05641D68E1CFBED0A96185541 /* CoreDataRepository-dummy.m in Sources */,
-				220C9EA2FB7A23C742166EA950D8A51A /* CoreDataRepository.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1119843E813051FADDB181E76AF69E81 /* PBXTargetDependency */ = {
+		92FB67AC3EC198E1E07A5AC89EE43F9C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BaseRepository;
 			target = 05BAF2569CFAC82EE098456055A15BB6 /* BaseRepository */;
-			targetProxy = 5D51F0C4B670D92B297B8D50E50F7FB9 /* PBXContainerItemProxy */;
+			targetProxy = 33BD9D3DCFA6D29414B68D0EAEEDC101 /* PBXContainerItemProxy */;
 		};
-		38C5B5B3BAAE3A72CD8161E351E90E71 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BaseRepository;
-			target = 05BAF2569CFAC82EE098456055A15BB6 /* BaseRepository */;
-			targetProxy = 25E8CA12A89F57B75A20E4648FEA8F42 /* PBXContainerItemProxy */;
-		};
-		F74B22134816CA28FF4AAF8A937796A8 /* PBXTargetDependency */ = {
+		A6D0E83AECAF9BCC41300FB1AFD243B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CoreDataRepository;
 			target = 8668E09CA5CA1536ED774045521A1205 /* CoreDataRepository */;
-			targetProxy = 74A855B61E0ADB0E9FCF2C65E9348ACD /* PBXContainerItemProxy */;
+			targetProxy = 9AEB76BD2A589390A24A9F76AED3822D /* PBXContainerItemProxy */;
+		};
+		E7E5E2C7F47DF19BDF1B4C7A6958A9D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BaseRepository;
+			target = 05BAF2569CFAC82EE098456055A15BB6 /* BaseRepository */;
+			targetProxy = 9535E5F059FBA87ECFC7E3DA3FB3A0DE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0560F69BDE48C176D7CCC8571E2937C9 /* Debug */ = {
+		0C70419C6181641BF0D0C9567D65F233 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3830117CBBEBBDD75F2B095289C3A011 /* Pods-CoreDataRepository_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -480,10 +485,43 @@
 			};
 			name = Debug;
 		};
-		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+		1F81D841A4DEE4F27EF59068B8A58A07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6A9F2B5FFD977A298745E3AC135287D /* CoreDataRepository.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CoreDataRepository/CoreDataRepository-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CoreDataRepository/CoreDataRepository-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CoreDataRepository/CoreDataRepository.modulemap";
+				PRODUCT_MODULE_NAME = CoreDataRepository;
+				PRODUCT_NAME = CoreDataRepository;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -545,175 +583,11 @@
 			};
 			name = Debug;
 		};
-		5A59987753713F8336F89F0EE8B1075A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D54E7FEF2EEBB225651F9DDA247CD2E8 /* BaseRepository.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BaseRepository/BaseRepository-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BaseRepository/BaseRepository-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BaseRepository/BaseRepository.modulemap";
-				PRODUCT_MODULE_NAME = BaseRepository;
-				PRODUCT_NAME = BaseRepository;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8A05F6F3DA39B5249271479B09C4DB51 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1229429BF9D6EC45B7B04377E250D62 /* Pods-CoreDataRepository_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CoreDataRepository_Example/Pods-CoreDataRepository_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CoreDataRepository_Example/Pods-CoreDataRepository_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		96C41EDCA8C4444DF01DF9CA8E46EBC9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 340F3EEA5B114C4A4C55C3AD2297B4DE /* BaseRepository.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BaseRepository/BaseRepository-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BaseRepository/BaseRepository-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BaseRepository/BaseRepository.modulemap";
-				PRODUCT_MODULE_NAME = BaseRepository;
-				PRODUCT_NAME = BaseRepository;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		ACF5017D75E3F35D66D9342281B17679 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40301F4420B9C36412368C1B3B19EDBB /* CoreDataRepository.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CoreDataRepository/CoreDataRepository-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CoreDataRepository/CoreDataRepository-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CoreDataRepository/CoreDataRepository.modulemap";
-				PRODUCT_MODULE_NAME = CoreDataRepository;
-				PRODUCT_NAME = CoreDataRepository;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AFFA2132748619CF1D7E286DC60B5030 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11A99D6904B638282E62C70DD4592A02 /* CoreDataRepository.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CoreDataRepository/CoreDataRepository-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CoreDataRepository/CoreDataRepository-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CoreDataRepository/CoreDataRepository.modulemap";
-				PRODUCT_MODULE_NAME = CoreDataRepository;
-				PRODUCT_NAME = CoreDataRepository;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -764,9 +638,143 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		75E2A9B1C69516C92561B3FE339B451F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D54E7FEF2EEBB225651F9DDA247CD2E8 /* BaseRepository.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BaseRepository/BaseRepository-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BaseRepository/BaseRepository-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BaseRepository/BaseRepository.modulemap";
+				PRODUCT_MODULE_NAME = BaseRepository;
+				PRODUCT_NAME = BaseRepository;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A3A5B67F29C3C7DC67267A0ADE7EBA3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 340F3EEA5B114C4A4C55C3AD2297B4DE /* BaseRepository.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BaseRepository/BaseRepository-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BaseRepository/BaseRepository-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BaseRepository/BaseRepository.modulemap";
+				PRODUCT_MODULE_NAME = BaseRepository;
+				PRODUCT_NAME = BaseRepository;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA8A65502473FCD6A08E5A381B3E6C5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1229429BF9D6EC45B7B04377E250D62 /* Pods-CoreDataRepository_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CoreDataRepository_Example/Pods-CoreDataRepository_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CoreDataRepository_Example/Pods-CoreDataRepository_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EFA72A247C9EC2DF18B29814799500B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6FB223A2603446F0B38270E94575D8F /* CoreDataRepository.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CoreDataRepository/CoreDataRepository-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CoreDataRepository/CoreDataRepository-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CoreDataRepository/CoreDataRepository.modulemap";
+				PRODUCT_MODULE_NAME = CoreDataRepository;
+				PRODUCT_NAME = CoreDataRepository;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -776,8 +784,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				196DFA3E4A09A28224918543529A1885 /* Debug */,
-				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -785,8 +793,17 @@
 		4EB810AD89D375D915CB893784AD14A0 /* Build configuration list for PBXNativeTarget "BaseRepository" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				96C41EDCA8C4444DF01DF9CA8E46EBC9 /* Debug */,
-				5A59987753713F8336F89F0EE8B1075A /* Release */,
+				A3A5B67F29C3C7DC67267A0ADE7EBA3F /* Debug */,
+				75E2A9B1C69516C92561B3FE339B451F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75B8AC7AF7D7EB724C97510771DFF3EF /* Build configuration list for PBXNativeTarget "CoreDataRepository" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F81D841A4DEE4F27EF59068B8A58A07 /* Debug */,
+				EFA72A247C9EC2DF18B29814799500B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -794,17 +811,8 @@
 		763D03C842B2F18C78E623BC0BE8EA5B /* Build configuration list for PBXNativeTarget "Pods-CoreDataRepository_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0560F69BDE48C176D7CCC8571E2937C9 /* Debug */,
-				8A05F6F3DA39B5249271479B09C4DB51 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DFDE9635FD9DAEDE2CCF80F078F8664A /* Build configuration list for PBXNativeTarget "CoreDataRepository" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ACF5017D75E3F35D66D9342281B17679 /* Debug */,
-				AFFA2132748619CF1D7E286DC60B5030 /* Release */,
+				0C70419C6181641BF0D0C9567D65F233 /* Debug */,
+				CA8A65502473FCD6A08E5A381B3E6C5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

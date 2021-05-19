@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CoreDataRepository'
-  s.version          = '0.4.0'
+  s.version          = '0.5.0'
   s.summary          = 'A short description of CoreDataRepository.'
 
 # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ TODO: Add long description of the pod here.
   s.author           = { 'BarredEwe' => 'grishutin@bifit.com' }
   s.source           = { :git => 'https://github.com/BarredEwe/CoreDataRepository.git', :tag => s.version.to_s }
   s.swift_version = '5.0'
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'CoreDataRepository/Classes/**/*'
 
