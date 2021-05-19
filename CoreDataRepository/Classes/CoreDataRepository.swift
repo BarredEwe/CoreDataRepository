@@ -27,9 +27,11 @@ public class CoreDataRepository<T: ModelEntity>: BaseRepository where T == T.Ent
 
     public func save(item: T.EntityType) throws {
         processQueue.sync {
-            let coreDataItem = item.modelObject
-            print("Save CoreData item: \(coreDataItem)")
-            coreDataClient.saveContext()
+            coreDataClient.context.perform {
+                let coreDataItem = item.modelObject
+                print("Save CoreData item: \(coreDataItem)")
+                self.coreDataClient.saveContext()
+            }
         }
     }
 
@@ -47,9 +49,11 @@ public class CoreDataRepository<T: ModelEntity>: BaseRepository where T == T.Ent
 
     public func delete(predicate: NSPredicate) throws {
         processQueue.sync {
-            let objects = coreDataClient.fetchObjects(entity: T.self, predicate: predicate, sortDescriptors: nil)
-            coreDataClient.delete(objects: objects as [NSManagedObject]);
-            coreDataClient.saveContext()
+            coreDataClient.context.perform {
+                let objects = self.coreDataClient.fetchObjects(entity: T.self, predicate: predicate, sortDescriptors: nil)
+                self.coreDataClient.delete(objects: objects as [NSManagedObject])
+                self.coreDataClient.saveContext()
+            }
         }
     }
 
@@ -109,36 +113,41 @@ class CoreDataClient {
     }()
 
     func saveContext(completion: (() -> ())? = nil) {
-        if self.context.hasChanges {
-            do {
-                try self.context.save()
-                if let c = completion { c() }
-            }
-            catch {
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-            }
+        guard self.context.hasChanges else { return }
+        do {
+            try self.context.save()
+            if let c = completion { c() }
+        }
+        catch {
+            let nserror = error as NSError
+            fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
         }
     }
 
     func delete(objects: [NSManagedObject]) {
-        for object in objects {
-            context.delete(object)
+        context.perform {
+            for object in objects {
+                self.context.delete(object)
+            }
         }
     }
 
     func deleteAllObjects() {
         for entityName in managedObjectModel.entitiesByName.keys {
-            let request = NSFetchRequest<NSManagedObject>(entityName: entityName)
-            request.includesPropertyValues = false
+            let request = NSFetchRequest<NSManagedObjectID>(entityName: entityName)
+            request.resultType = .managedObjectIDResultType
 
-            do {
-                for object in try context.fetch(request) {
-                    context.delete(object)
+            let mainContext = self.context
+
+            mainContext.perform {
+                do {
+                    let result = try mainContext.fetch(request)
+                    result.forEach { mainContext.delete(mainContext.object(with: $0)) }
+                    self.saveContext()
                 }
-            }
-            catch let error as NSError {
-                print(error.localizedDescription)
+                catch let error as NSError {
+                    print(error.localizedDescription)
+                }
             }
         }
     }
@@ -150,13 +159,16 @@ class CoreDataClient {
         request.sortDescriptors = sortDescriptors
         request.fetchLimit = 1
 
-        do {
-            return try context.fetch(request).first
+        var result: T?
+        context.performAndWait {
+            do {
+                result = try context.fetch(request).first
+            }
+            catch let error as NSError {
+                print(error.localizedDescription)
+            }
         }
-        catch let error as NSError {
-            print(error.localizedDescription)
-            return nil
-        }
+        return result
     }
 
     func fetchObjects<T: NSManagedObject>(entity: T.Type, predicate: NSPredicate? = nil, sortDescriptors: [NSSortDescriptor]? = nil) -> [T] {
@@ -165,13 +177,15 @@ class CoreDataClient {
         request.sortDescriptors = sortDescriptors
         request.fetchBatchSize = defaultFetchBatchSize
 
-        do {
-            return try context.fetch(request)
+        var result = [T]()
+        context.performAndWait {
+            do {
+                result = try context.fetch(request)
+            }
+            catch let error as NSError {
+                print(error.localizedDescription)
+            }
         }
-        catch let error as NSError {
-            print(error.localizedDescription)
-            return [T]()
-        }
+        return result
     }
-
 }
