@@ -1,6 +1,8 @@
 //
-//  Created by grishutin on 19/12/2017.
-//  Copyright © 2017 bifit. All rights reserved.
+//  CoreDataRepository.swift
+//  CoreDataRepository
+//
+//  Created by Grishutin Maksim on 21/05/2019.
 //
 
 import Foundation
@@ -67,14 +69,8 @@ public class CoreDataRepository<T: ModelEntity>: BaseRepository where T == T.Ent
         let context = CoreDataClient.shared.currentContext
         return processQueue.sync {
             let sortDescriptor = sorted.flatMap { [NSSortDescriptor(key: $0.key, ascending: $0.ascending)] }
-            let objects = coreDataClient.fetchObjects(entity: T.self, predicate: predicate, sortDescriptors: sortDescriptor, context: context)
-
-            guard let page = page, !objects.isEmpty, page.limit != 0 else { return objects.compactMap { $0.plainObject } }
-
-            let limit = objects.count > page.offset + page.limit ? page.offset + page.limit : objects.count
-            let offset = objects.count < page.offset ? objects.count : page.offset
-
-            return objects[offset..<limit].compactMap { $0.plainObject }
+            return coreDataClient.fetchObjects(entity: T.self, predicate: predicate, sortDescriptors: sortDescriptor, context: context, page: page)
+                .compactMap { $0.plainObject }
         }
     }
 

@@ -1,6 +1,6 @@
 //
 //  CoreDataConfiguration.swift
-//  BaseRepository
+//  CoreDataRepository
 //
 //  Created by Grishutin Maksim on 21/05/2019.
 //

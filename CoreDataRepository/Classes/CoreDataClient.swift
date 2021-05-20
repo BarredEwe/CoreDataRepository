@@ -1,7 +1,10 @@
 //
-//  Created by grishutin on 19/12/2017.
-//  Copyright © 2017 bifit. All rights reserved.
+//  CoreDataClient.swift
+//  CoreDataRepository
 //
+//  Created by Grishutin Maksim on 21/05/2019.
+//
+
 
 import Foundation
 import CoreData
@@ -9,8 +12,6 @@ import CoreData
 class CoreDataClient {
 
     static let shared = CoreDataClient()
-
-    var defaultFetchBatchSize = 20
 
     lazy var context: NSManagedObjectContext = {
         return persistentContainer.viewContext
@@ -85,11 +86,13 @@ class CoreDataClient {
     func fetchObjects<T: NSManagedObject>(entity: T.Type,
                                           predicate: NSPredicate? = nil,
                                           sortDescriptors: [NSSortDescriptor]? = nil,
-                                          context: NSManagedObjectContext) -> [T] {
+                                          context: NSManagedObjectContext,
+                                          page: (limit: Int, offset: Int)? = nil) -> [T] {
         let request = NSFetchRequest<T>(entityName: String(describing: entity))
         request.predicate = predicate
         request.sortDescriptors = sortDescriptors
-        request.fetchBatchSize = defaultFetchBatchSize
+        request.fetchLimit = page?.limit ?? 0
+        request.fetchOffset = page?.offset ?? 0
 
         do {
             return try context.fetch(request)
