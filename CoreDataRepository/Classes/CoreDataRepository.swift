@@ -11,7 +11,7 @@ import CoreData
 
 fileprivate let processQueue = DispatchQueue(label: "CoreDataRepository.processQueue")
 
-public class CoreDataRepository<T: ModelEntity>: BaseRepository where T == T.EntityType.ModelEntityType, T: NSManagedObject {
+public class CoreDataRepository<T: ModelEntity>: BaseRepository where T: NSManagedObject {
 
     public typealias EntityType = T.EntityType
 
